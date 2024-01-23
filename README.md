@@ -1,9 +1,8 @@
-Certainly! To create a basic README for a Vite + React app named "DocFlow," you can follow the template below. Feel free to customize it further based on your project's details.
-
 ```markdown
 # DocFlow
 
-DocFlow is a React application built with Vite, designed to provide a seamless experience for editing, sharing, and organizing your documents.
+DocFlow is a React application built with Vite, designed to provide a seamless experience for editing,
+sharing, and organizing your documents.
 
 ## Getting Started
 
