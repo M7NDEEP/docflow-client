@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Logs = () => {
   const [logs, setLogs] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:3000/logs')
+    fetch('https://docflow-server.cyclic.app/logs')
       .then(response => response.json())
       .then(data => setLogs(data))
       .catch(error => console.error('Error fetching logs:', error));

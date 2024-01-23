@@ -28,7 +28,7 @@ const Home = () => {
       const userId = user.email;
 
       try {
-        const response = await fetch('http://localhost:3000/documents', {
+        const response = await fetch('https://docflow-server.cyclic.app/documents', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

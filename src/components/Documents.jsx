@@ -23,7 +23,7 @@ const Documents = () => {
     const fetchUserDocuments = async () => {
       try {
         if (user) {
-          const response = await fetch(`http://localhost:3000/documents/${user.email}`);
+          const response = await fetch(`https://docflow-server.cyclic.app/documents/${user.email}`);
           const documents = await response.json();
           setUserDocuments(documents);
         }
@@ -39,7 +39,7 @@ const Documents = () => {
     const isConfirmed = window.confirm("Are you sure to delete this document?");
     if (isConfirmed) {
       try {
-        const response = await fetch(`http://localhost:3000/documents/${documentId}`, {
+        const response = await fetch(`https://docflow-server.cyclic.app/documents/${documentId}`, {
           method: 'DELETE',
         });
   

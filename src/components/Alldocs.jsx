@@ -12,7 +12,7 @@ const Alldocs = () => {
 
   useEffect(() => {
     // Fetch documents from the API
-    fetch('http://localhost:3000/documents')
+    fetch('https://docflow-server.cyclic.app/documents')
       .then(response => response.json())
       .then(data => setDocuments(data))
       .catch(error => console.error('Error fetching documents:', error));

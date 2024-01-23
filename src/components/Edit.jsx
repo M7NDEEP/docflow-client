@@ -17,7 +17,7 @@ const Edit = () => {
   const Id = searchParams.get('id');
 
   useEffect(() => {
-    fetch(`http://localhost:3000/getdoc/${Id}`)
+    fetch(`https://docflow-server.cyclic.app/getdoc/${Id}`)
       .then(response => response.json())
       .then(data => {
         setTitle(data.title);
@@ -29,7 +29,7 @@ const Edit = () => {
 
   const handleUpdateClick = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/documents/${Id}`, {
+      const response = await fetch(`https://docflow-server.cyclic.app/documents/${Id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
